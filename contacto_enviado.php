@@ -28,7 +28,6 @@
     $headers = "From: nicogangi@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
     $headers .= "Reply-To: $email"; 
     $wasSent = mail($to,$email_subject,$email_body);
-    print_r($wasSent);
 ?>
 
 <body>
@@ -43,13 +42,13 @@
                 showConfirmButton: false
             })
 
-            /* setTimeout(function () {
+            setTimeout(function () {
                     window.location.href = "index.html"; //will redirect to your blog page (an ex: blog.html)
-                }, 5000) */
+                }, 5000)
                 </script>
 
             <?php
-                /* header( "refresh:5;url=/index.html" ); */
+                header( "refresh:5;url=/index.html" );
             ?>
     </div>
 
